@@ -35,8 +35,8 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M4</version>
 				<configuration>
-					<suiteXmlFiles>
-						<suiteXmlFile>${SuiteName}.xml</suiteXmlFile>
+					<suiteXmlFiles>Web_Regression.xml
+						<suiteXmlFile>TestSuite_${Plateform}_${Group}.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

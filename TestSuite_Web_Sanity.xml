@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite_Web_Regression" verbose="1">
+	<test name="Test_Web_Regression">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="testpackage.web.TestClass1Web" />
+			<class name="testpackage.web.TestClass2Web" />
+		</classes>
+	</test>
+</suite>
