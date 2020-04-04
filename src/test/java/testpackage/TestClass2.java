@@ -23,6 +23,10 @@ public class TestClass2 extends BaseClass{
 		System.err.println("hello");
 		System.err.println("hello");
 		
+		
+	}
+	public static void munni() {
+		System.out.println("munni method");
 	}
 	
 }
