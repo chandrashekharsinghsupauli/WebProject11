@@ -24,9 +24,15 @@ public class TestClass2 extends BaseClass{
 		System.err.println("hello");
 		
 		
+
+	}
+	public void hemanchal() {
+		System.out.println("hello Hemanchal");
+
 	}
 	public static void munni() {
 		System.out.println("munni method");
+
 	}
 	
 }
