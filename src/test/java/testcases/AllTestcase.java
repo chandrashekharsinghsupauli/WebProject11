@@ -60,7 +60,10 @@ public class AllTestcase {
 	int actuallResult3=FactorialClass.findFactorial(3);
 	System.err.println("factorial of 3 = "+actuallResult3 );
 	Assert.assertEquals(6, actuallResult3);
+	}
 	
-	
+	@Test
+	public void new111() {
+		System.err.println("new metho");
 	}
 }
