@@ -3,6 +3,7 @@ package testcases;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.java.munni.Calculate;
 import com.java.munni.Factorial;
 
 import Hemanchal.FactorialClass;
@@ -35,6 +36,12 @@ public class AllTestcase {
 		int actualres=Factorial.findFactorial(0);
 		Assert.assertEquals(1, actualres);
 		
+	}
+
+	@Test
+	public void munni_addition() {
+		int actualres=Calculate.addition(2, 9);
+		Assert.assertEquals(11, actualres);
 	}
 	
 	@Test
