@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import com.java.munni.Calculate;
 import com.java.munni.Factorial;
+import com.java.munni.FindSimpleInterest;
 
 import Hemanchal.FactorialClass;
 
@@ -47,30 +48,38 @@ public class AllTestcase {
 	@Test
 	public void Harish_findFactorial() {
 		
-	int actuallResult=FactorialClass.findFactorial(5);
-	System.err.println("factorial of 5 = "+actuallResult );
-	Assert.assertEquals(120, actuallResult);
+		int actuallResult=FactorialClass.findFactorial(5);
+		System.err.println("factorial of 5 = "+actuallResult );
+		Assert.assertEquals(120, actuallResult);
 	
 	
 	}
 	@Test
 	public void Harish_findFactorial2() {
 		
-	int actuallResult4=FactorialClass.findFactorial(4);
-	System.err.println("factorial of 4 = "+actuallResult4 );
-	Assert.assertEquals(24, actuallResult4);
+		int actuallResult4=FactorialClass.findFactorial(4);
+		System.err.println("factorial of 4 = "+actuallResult4 );
+		Assert.assertEquals(24, actuallResult4);
 	
 	}
 	@Test
 	public void Harish_findFactorial3() {
 		
-	int actuallResult3=FactorialClass.findFactorial(3);
-	System.err.println("factorial of 3 = "+actuallResult3 );
-	Assert.assertEquals(6, actuallResult3);
+		int actuallResult3=FactorialClass.findFactorial(3);
+		System.err.println("factorial of 3 = "+actuallResult3 );
+		Assert.assertEquals(6, actuallResult3);
 	}
 	
 	@Test
 	public void new111() {
 		System.err.println("new metho");
+	}
+	
+	@Test
+	public void munni_calulateInterest() {
+		float actuallResult=FindSimpleInterest.calculateInteres(2000, 3, 2);
+		System.out.println("actual result="+actuallResult);
+		Assert.assertEquals(120, actuallResult,2);
+	
 	}
 }
