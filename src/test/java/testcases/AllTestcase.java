@@ -1,10 +1,12 @@
 package testcases;
 
+import java.util.Scanner;
+
 import org.junit.Assert;
 import org.junit.Test;
 
 import com.java.munni.Factorial;
-
+import Hemanchal.CalculateSimplInterest;
 import Hemanchal.FactorialClass;
 
 public class AllTestcase {
@@ -63,7 +65,19 @@ public class AllTestcase {
 	}
 	
 	@Test
-	public void new111() {
-		System.err.println("new metho");
+	public void Harish_findSimpleInterest() {
+		Scanner sc=new Scanner(System.in);
+		System.err.println("Enter principal");
+		int p=sc.nextInt();
+		System.err.println("Enter Rate");
+		int r=sc.nextInt();
+		System.err.println("Enter time");
+		int t=sc.nextInt();
+		double result=CalculateSimplInterest.findingSimpleInterest(p,r,t);
+		System.err.println("Simple Interest ="+result);
+		
+		
 	}
+	
+	
 }
