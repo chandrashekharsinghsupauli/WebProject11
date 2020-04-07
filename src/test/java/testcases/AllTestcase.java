@@ -12,6 +12,8 @@ import com.java.munni.FindSimpleInterest;
 import Hemanchal.FactorialClass;
 
 public class AllTestcase {
+	Scanner sc=new Scanner(System.in);
+	
 	@Test
 	public void method() {
 		System.out.println("start............");
@@ -74,7 +76,7 @@ public class AllTestcase {
 	
 	@Test
 	public void Harish_findSimpleInterest() {
-		Scanner sc=new Scanner(System.in);
+		
 		System.err.println("Enter principal");
 		int p=sc.nextInt();
 		System.err.println("Enter Rate");
@@ -95,4 +97,23 @@ public class AllTestcase {
 	
 	}
 
+	//7/4/2020
+	
+	@Test
+	public void Harish_findingPrincipal() {
+		System.err.println("Enter Simple Interest");
+		int si=sc.nextInt();
+		System.err.println("Enter Rate");
+		int r=sc.nextInt();
+		System.err.println("Enter time");
+		int t=sc.nextInt();
+		System.err.println("Enter Result");
+		double result=sc.nextDouble();
+		double principalResult=CalculateSimplInterest.findingPrincipal(si, r, t);
+		System.err.println("Principal = "+principalResult);
+		Assert.assertEquals(result, principalResult);
+		
+		
+		
+	}
 }
