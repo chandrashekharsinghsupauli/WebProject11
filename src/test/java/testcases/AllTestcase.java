@@ -6,6 +6,7 @@ import org.junit.Test;
 import com.java.munni.Calculate;
 import com.java.munni.Factorial;
 import com.java.munni.FindSimpleInterest;
+import com.java.munni.Pelindrom;
 
 import Hemanchal.FactorialClass;
 
@@ -80,6 +81,13 @@ public class AllTestcase {
 		float actuallResult=FindSimpleInterest.calculateInteres(2000, 3, 2);
 		System.out.println("actual result="+actuallResult);
 		Assert.assertEquals(120, actuallResult,2);
+	
+	}
+	@Test
+	public void munni_findPelindrom() {
+		float actuallResult=Pelindrom.findPelindrom(121);
+		System.out.println("actual result="+actuallResult);
+		Assert.assertEquals(121, actuallResult);
 	
 	}
 }
