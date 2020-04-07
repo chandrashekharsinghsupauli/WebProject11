@@ -1,16 +1,20 @@
 package testcases;
 
+import java.util.Scanner;
+
 import org.junit.Assert;
 import org.junit.Test;
-
 import com.java.munni.Calculate;
 import com.java.munni.Factorial;
+import Hemanchal.CalculateSimplInterest;
 import com.java.munni.FindSimpleInterest;
 import com.java.munni.Pelindrom;
 
 import Hemanchal.FactorialClass;
 
 public class AllTestcase {
+	Scanner sc=new Scanner(System.in);
+	
 	@Test
 	public void method() {
 		System.out.println("start............");
@@ -72,10 +76,20 @@ public class AllTestcase {
 	}
 	
 	@Test
-	public void new111() {
-		System.err.println("new metho");
+	public void Harish_findSimpleInterest() {
+		
+		System.err.println("Enter principal");
+		int p=sc.nextInt();
+		System.err.println("Enter Rate");
+		int r=sc.nextInt();
+		System.err.println("Enter time");
+		int t=sc.nextInt();
+		double result=CalculateSimplInterest.findingSimpleInterest(p,r,t);
+		System.err.println("Simple Interest ="+result);
+		
+		
 	}
-	
+
 	@Test
 	public void munni_calulateInterest() {
 		float actuallResult=FindSimpleInterest.calculateInteres(2000, 3, 2);
@@ -83,11 +97,33 @@ public class AllTestcase {
 		Assert.assertEquals(120, actuallResult,2);
 	
 	}
+//7/04/2020
 	@Test
 	public void munni_findPelindrom() {
 		float actuallResult=Pelindrom.findPelindrom(121);
 		System.out.println("actual result="+actuallResult);
 		Assert.assertEquals(121, actuallResult);
+	}
+
+
+	//7/4/2020
 	
+	@Test
+	public void Harish_findingPrincipal() {
+		System.err.println("Enter Simple Interest");
+		int si=sc.nextInt();
+		System.err.println("Enter Rate");
+		int r=sc.nextInt();
+		System.err.println("Enter time");
+		int t=sc.nextInt();
+		System.err.println("Enter Result");
+		double result=sc.nextDouble();
+		double principalResult=CalculateSimplInterest.findingPrincipal(si, r, t);
+		System.err.println("Principal = "+principalResult);
+		Assert.assertEquals(result, principalResult);
+		
+		
+		
+
 	}
 }
