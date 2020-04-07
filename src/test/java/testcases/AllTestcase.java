@@ -8,6 +8,7 @@ import com.java.munni.Calculate;
 import com.java.munni.Factorial;
 import Hemanchal.CalculateSimplInterest;
 import com.java.munni.FindSimpleInterest;
+import com.java.munni.Pelindrom;
 
 import Hemanchal.FactorialClass;
 
@@ -96,6 +97,14 @@ public class AllTestcase {
 		Assert.assertEquals(120, actuallResult,2);
 	
 	}
+//7/04/2020
+	@Test
+	public void munni_findPelindrom() {
+		float actuallResult=Pelindrom.findPelindrom(121);
+		System.out.println("actual result="+actuallResult);
+		Assert.assertEquals(121, actuallResult);
+	}
+
 
 	//7/4/2020
 	
@@ -115,5 +124,6 @@ public class AllTestcase {
 		
 		
 		
+
 	}
 }
