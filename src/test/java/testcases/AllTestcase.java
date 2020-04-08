@@ -121,9 +121,9 @@ public class AllTestcase {
 		double principalResult=CalculateSimplInterest.findingPrincipal(si, r, t);
 		System.err.println("Principal = "+principalResult);
 		Assert.assertEquals(result, principalResult);
-		
-		
-		
-
+	}
+	public void munni_subtraction() {
+		int actualRes=Calculate.subtraction(8, 4);
+		Assert.assertEquals(4, actualRes);
 	}
 }
