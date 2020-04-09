@@ -15,6 +15,8 @@ import com.java.munni.Pelindrom;
 import Hemanchal.FactorialClass;
 
 public class AllTestcase {
+	int actualres;
+	
 	Scanner sc=new Scanner(System.in);
 	
 	@Test
@@ -23,32 +25,32 @@ public class AllTestcase {
 	}
 	@Test
 	public void munni_findFactorial5() {
-		int actualres=Factorial.findFactorial(5);
+		actualres=Factorial.findFactorial(5);
 		Assert.assertEquals(120, actualres);
 		
 	}
 	@Test
 	public void munni_findFactorial4() {
-		int actualres=Factorial.findFactorial(4);
+		actualres=Factorial.findFactorial(4);
 		Assert.assertEquals(24, actualres);
 		
 	}
 	@Test
 	public void munni_findFactorial3() {
-		int actualres=Factorial.findFactorial(3);
+		actualres=Factorial.findFactorial(3);
 		Assert.assertEquals(6, actualres);
 		
 	}
 	@Test
 	public void munni_findFactorial0() {
-		int actualres=Factorial.findFactorial(0);
+		actualres=Factorial.findFactorial(0);
 		Assert.assertEquals(1, actualres);
 		
 	}
 
 	@Test
 	public void munni_addition() {
-		int actualres=Calculate.addition(2, 9);
+		actualres=Calculate.addition(2, 9);
 		Assert.assertEquals(11, actualres);
 	}
 	
@@ -124,10 +126,17 @@ public class AllTestcase {
 		System.err.println("Principal = "+principalResult);
 		Assert.assertEquals(result, principalResult);
 	}
+	@Test
 	public void munni_subtraction() {
 		int actualRes=Calculate.subtraction(8, 4);
 		Assert.assertEquals(4, actualRes);
 
+	}
+//09/04/2020
+	@Test
+	public void munni_multiplication() {
+		actualres=Calculate.multiplication(30,3);
+		Assert.assertEquals(90, actualres);
 	}
 	//9/04/20
 	@Test
