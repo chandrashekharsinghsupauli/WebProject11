@@ -6,6 +6,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import com.java.munni.Calculate;
 import com.java.munni.Factorial;
+
+import Hemanchal.CalculateArmstrong;
 import Hemanchal.CalculateSimplInterest;
 import com.java.munni.FindSimpleInterest;
 
@@ -113,7 +115,17 @@ public class AllTestcase {
 		System.err.println("Principal = "+principalResult);
 		Assert.assertEquals(result, principalResult);
 		
-		
-		
 	}
+	
+	@Test
+	public void Haris_findingArmstrong() {
+		System.err.println("Enter a no for armstrong");
+		int num=sc.nextInt();
+		System.err.println("Enter resutl");
+		int result=sc.nextInt();
+		int actual=CalculateArmstrong.findingArmstron(num);
+		System.err.println("resutl ="+actual);
+		Assert.assertEquals(result, actual);
+	}
+	
 }
