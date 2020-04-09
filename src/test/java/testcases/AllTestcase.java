@@ -10,6 +10,7 @@ import com.java.munni.Factorial;
 import Hemanchal.CalculateArmstrong;
 import Hemanchal.CalculateSimplInterest;
 import com.java.munni.FindSimpleInterest;
+import com.java.munni.Pelindrom;
 
 import Hemanchal.FactorialClass;
 
@@ -98,6 +99,14 @@ public class AllTestcase {
 		Assert.assertEquals(120, actuallResult,2);
 	
 	}
+//7/04/2020
+	@Test
+	public void munni_findPelindrom() {
+		float actuallResult=Pelindrom.findPelindrom(121);
+		System.out.println("actual result="+actuallResult);
+		Assert.assertEquals(121, actuallResult);
+	}
+
 
 	//7/4/2020
 	
@@ -114,9 +123,13 @@ public class AllTestcase {
 		double principalResult=CalculateSimplInterest.findingPrincipal(si, r, t);
 		System.err.println("Principal = "+principalResult);
 		Assert.assertEquals(result, principalResult);
-		
 	}
-	
+	public void munni_subtraction() {
+		int actualRes=Calculate.subtraction(8, 4);
+		Assert.assertEquals(4, actualRes);
+
+	}
+	//9/04/20
 	@Test
 	public void Haris_findingArmstrong() {
 		System.err.println("Enter a no for armstrong");
