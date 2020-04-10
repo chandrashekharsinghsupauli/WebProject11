@@ -141,4 +141,16 @@ public class AllTestcase {
 		Assert.assertEquals(result, actual);
 	}
 	
+	//10/04/20
+		@Test
+		public void Haris_findingPelindrom() {
+			System.err.println("Enter a no for armstrong");
+			int num=sc.nextInt();
+			System.err.println("Enter resutl");
+			int result=sc.nextInt();
+			int actual=CalculateArmstrong.findingArmstron(num);
+			System.err.println("resutl ="+actual);
+			Assert.assertEquals(result, actual);
+		}
+	
 }
